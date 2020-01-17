@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-01-16T02:13:40.824Z</updated>
+  <updated>2020-01-17T03:31:48.749Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>正则表达学习</title>
+    <link href="http://yoursite.com/2020/01/17/regular/"/>
+    <id>http://yoursite.com/2020/01/17/regular/</id>
+    <published>2020-01-17T03:21:20.000Z</published>
+    <updated>2020-01-17T03:31:48.749Z</updated>
+    
+    <content type="html"><![CDATA[<p>re.findall遍历匹配，可以获取字符串中所有匹配的字符串，返回一个列表。<br> 格式：re.findall(pattern, string, flags=0)<br>import re<br>tt = “Tina is a good girl, she is cool, clever, and so on…”<br>rr = re.compile(r’\w<em>oo\w</em>‘)<br>print(rr.findall(tt))<br>print(re.findall(r’(\w)*oo(\w)’,tt))#()表示子表达式<br>执行结果如下：<br>[‘good’, ‘cool’]            #注意这里有个陷阱，在元素分割符”,”后面会自动生成一个空格，这就导致在插入mysql数据库的时候报错。需要将空格去掉才可以成功插入到数据库。<br>[(‘g’, ‘d’), (‘c’, ‘l’)]  </p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;re.findall遍历匹配，可以获取字符串中所有匹配的字符串，返回一个列表。&lt;br&gt; 格式：re.findall(pattern, string, flags=0)&lt;br&gt;import re&lt;br&gt;tt = “Tina is a good girl, she is coo
+      
+    
+    </summary>
+    
+    
+    
+      <category term="findall" scheme="http://yoursite.com/tags/findall/"/>
+    
+  </entry>
   
   <entry>
     <title>second</title>

@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>tages | 小崔的博客</title>
-  <meta name="keywords" content="">
-  <meta name="description" content="tages | 小崔的博客">
+  <title>正则表达学习 | 小崔的博客</title>
+  <meta name="keywords" content=" findall ">
+  <meta name="description" content="正则表达学习 | 小崔的博客">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="个人简介  是不是想看里面有什么呀！嘿嘿，告诉你啥都没有，哈哈哈哈哈哈！">
 <meta property="og:type" content="website">
@@ -240,19 +240,25 @@
 </aside>
 <div class="post">
     <div class="pjax">
-        <article id="page-" class="article article-type-page" itemscope itemprop="blogPost">
+        <article id="post-regular" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">tages</h1>
+        <h1 class="article-title">正则表达学习</h1>
     
     <div class="article-meta">
         
         
         
+        
+        <span class="tag">
+            
+            <a class="color3">findall</a>
+            
+        </span>
         
     </div>
     <div class="article-meta">
         
-        创建时间:<time class="date" title='更新时间: 2020-01-08 18:49:16'>2020-01-08 18:48</time>
+        创建时间:<time class="date" title='更新时间: 2020-01-17 11:31:48'>2020-01-17 11:21</time>
         
     </div>
     <div class="article-meta">
@@ -290,7 +296,8 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <p>re.findall遍历匹配，可以获取字符串中所有匹配的字符串，返回一个列表。<br> 格式：re.findall(pattern, string, flags=0)<br>import re<br>tt = “Tina is a good girl, she is cool, clever, and so on…”<br>rr = re.compile(r’\w<em>oo\w</em>‘)<br>print(rr.findall(tt))<br>print(re.findall(r’(\w)*oo(\w)’,tt))#()表示子表达式<br>执行结果如下：<br>[‘good’, ‘cool’]            #注意这里有个陷阱，在元素分割符”,”后面会自动生成一个空格，这就导致在插入mysql数据库的时候报错。需要将空格去掉才可以成功插入到数据库。<br>[(‘g’, ‘d’), (‘c’, ‘l’)]  </p>
+
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论。 </span>
     </div>
@@ -301,6 +308,18 @@
     <a  class="dashang" onclick="dashangToggle()">赏</a>
 </p>
 
+
+<div class="article_copyright">
+    <p><span class="copy-title">文章标题:</span>正则表达学习</p>
+    
+    <p><span class="copy-title">本文作者:</span><a  title="xiaocui">xiaocui</a></p>
+    <p><span class="copy-title">发布时间:</span>2020-01-17, 11:21:20</p>
+    <p><span class="copy-title">最后更新:</span>2020-01-17, 11:31:48</p>
+    <span class="copy-title">原始链接:</span><a class="post-url" href="/2020/01/17/regular/" title="正则表达学习">http://yoursite.com/2020/01/17/regular/</a>
+    <p>
+        <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
+    </p>
+</div>
 
 
 

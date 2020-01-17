@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>正则表达学习</title>
+    <url>/2020/01/17/regular/</url>
+    <content><![CDATA[<p>re.findall遍历匹配，可以获取字符串中所有匹配的字符串，返回一个列表。<br> 格式：re.findall(pattern, string, flags=0)<br>import re<br>tt = “Tina is a good girl, she is cool, clever, and so on…”<br>rr = re.compile(r’\w<em>oo\w</em>‘)<br>print(rr.findall(tt))<br>print(re.findall(r’(\w)*oo(\w)’,tt))#()表示子表达式<br>执行结果如下：<br>[‘good’, ‘cool’]            #注意这里有个陷阱，在元素分割符”,”后面会自动生成一个空格，这就导致在插入mysql数据库的时候报错。需要将空格去掉才可以成功插入到数据库。<br>[(‘g’, ‘d’), (‘c’, ‘l’)]  </p>
+]]></content>
+      <tags>
+        <tag>findall</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>second</title>
     <url>/2020/01/08/second/</url>
     <content><![CDATA[<p>我就是想试一下好不好使！</p>
